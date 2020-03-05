@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1>Array Check</h1>
+    <script>
+        var arr = [1,2,3,4,5];
+        //var elem = document.getElementById("ch");
+        for(var i in arr)
+        {
+            document.writeln("<h3>"+arr[i]+"</h3>"+"<br>");
+            //elem.innerHtml += arr[j];
+        }
+    </script>
+   
+    <h1 id = "ch">Must Change</h1>
+    <!-- <script>
+        var arr = [1,2,3,4,5];
+        var elem = document.getElementById("ch");
+        for(var j = 0;j < arr.length;j++)
+        {
+            //document.writeln("<h3>"+arr[i]+"</h3>"+"<br>");
+            elem.innerHtml += arr[j];
+        }
+    </script> -->
+    <table border="2" width="50%">
+    <script>
+        (function()
+        {
+            alert("Hello");
+        })();
+        var arr = [[1,'sam',500],[2,'ram',500],[3,'jack',900]];
+        document.write("<tr>");
+                document.write("<th>"+"S.No"+"</th>");
+                document.write("<th>"+"Name"+"</th>");
+                document.write("<th>"+"Sal"+"</th>");
+        document.write("</tr>");
+        for(var i in arr)
+        {
+            
+            document.write("<tr>");
+                document.writeln("<td>"+arr[i][0]+"</td>");
+                document.writeln("<td>"+arr[i][1]+"</td>");
+                document.writeln("<td>"+arr[i][2    ]+"</td>");
+            document.write("</tr>");
+        }
+    </script>
+    </table>
+</body>
+</html>

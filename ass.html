@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var stu;
+        function submit()
+        {
+                var name=document.getElementById('name1').value;
+                var sub1 = parseInt(document.getElementById('sub1').value);
+                var sub2 = parseInt(document.getElementById('sub2').value);
+                var stu1={name:name1,sub:[sub1,sub2]};
+                console.log(stu1[0]);
+        }
+    </script>
+</head>
+<body>
+    <h3>Student Details</h3>
+  <div>
+    <div>
+        <label for = "txt_name">Name : </label>
+        <input type = "text" name = "txt_name" id='name1'>
+    </div>
+    <div>
+        <label for = "txt_name">Subject1 : </label>
+        <input type = "text" name = "txt_name" class="id1" id='sub1'>
+    </div>
+    <div>
+        <label for = "txt_name">Subject2 : </label>
+        <input type = "text" name = "txt_name" class="id1" id='sub2'>
+    </div>
+    <div>
+        <input type="button" value="Submit" onclick="submit()">
+    </div>
+  </div>      
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        
+        function opr()
+        {
+            var a = parseInt(document.getElementById('id1').value);
+            var b = parseInt(document.getElementById('id2').value);
+            var temp = parseInt(document.getElementById('id3').value);
+            var res = 0;
+            switch(temp)
+            {
+                case 1 : res = a + b;
+                break;
+                case 2 : res = a - b;
+                break;
+                case 3 : res = a * b;
+                break;
+                case 4 : res = a / b;
+                break;
+                default : alert("PLZZ enter a valid num");
+                break;
+            }
+            var x = document.getElementById('res').value = res;
+        }
+        
+    </script>
+</head>
+<body>
+    <label for="num1">Num1</label>
+    <input type = "text" name = "txt_name" id='id1'>
+    <label for="num2">Num2</label>
+    <input type = "text" name = "txt_name" id='id2'>
+    <label for="num2">Enter the num for operation</label>
+    <input type = "text" name = "txt_name" id='id3'>
+    <input type="button" name="btn_click" value="Add" onclick="opr()">
+    <div>
+        <label for="num1">REs</label>
+    <input type = "text" name = "txt_name" id='res'>
+    </div>
+</body>
+</html>

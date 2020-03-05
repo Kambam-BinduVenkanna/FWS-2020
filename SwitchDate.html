@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function TodayDate()
+        {
+            var i = new Date().getDay();
+            var res = " ";
+            console.log(i);
+            switch(i)
+            {
+                case 1 : res  = 'Monday';
+                break;
+                case 2 : res = 'Tuesday';
+                break;
+                case 3 : res = 'Webnesday';
+                break;
+                case 4 : res = 'Thursday';
+                break;
+                case 5 : res = 'Friday';
+                break;
+                case 6 : res = 'Saturday';
+                break;
+                case 7 : res = 'Sunday';
+                break;
+                
+            }
+            alert("Today Day is "+res);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value='click me!!' onclick="TodayDate()">
+</body>
+</html>

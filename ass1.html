@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var stu1;
+        function submitValue(){
+            
+                var name=document.getElementById('name').value;
+                var sub1 = parseInt(document.getElementById('sub1').value);
+                var sub2 = parseInt(document.getElementById('sub2').value);
+                stu1={name:name1,sub:[sub1,sub2]};
+                console.log(stu1);
+
+                // var name2=document.getElementById('name').value;
+                // var sub1 = parseInt(document.getElementById('sub1').value);
+                // var sub2 = parseInt(document.getElementById('sub2').value);
+                // var stu2={name:name2,sub:[sub1,sub2]};
+
+                // var name2=document.getElementById('name').value;
+                // var sub1 = parseInt(document.getElementById('sub1').value);
+                // var sub2 = parseInt(document.getElementById('sub2').value);
+                // var stu3={name:name2,sub:[sub1,sub2]};
+
+                // var name2=document.getElementById('name').value;
+                // var sub1 = parseInt(document.getElementById('sub1').value);
+                // var sub2 = parseInt(document.getElementById('sub2').value);
+                // var stu4={name:name2,sub:[sub1,sub2]};
+
+                // var stu = {stu1,stu2,stu3,stu4};
+        }
+        
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div>
+                <label for = "txt_name">Name : </label>
+                <input type = "text" name = "txt_name" id='name1'>
+            </div>
+            <div>
+                <label for = "txt_name">Subject1 : </label>
+                <input type = "text" name = "txt_name" class="id1" id='sub1'>
+            </div>
+            <div>
+                <label for = "txt_name">Subject2 : </label>
+                <input type = "text" name = "txt_name" class="id1" id='sub2'>
+            </div>
+            <br><br>
+            <!-- <div>
+                <label for = "txt_name">Name : </label>
+                <input type = "text" name = "txt_name" id='name2'>
+            </div>
+            <div>
+                <label for = "txt_name">Subject1 : </label>
+                <input type = "text" name = "txt_name" class="id1" id='sub11'>
+            </div>
+            <div>
+                <label for = "txt_name">Subject2 : </label>
+                <input type = "text" name = "txt_name" class="id1" id='sub22'>
+            </div>
+            <br><br>
+            <div>
+                <label for = "txt_name">Name : </label>
+                <input type = "text" name = "txt_name" id='name3'>
+            </div>
+            <div>
+                <label for = "txt_name">Subject1 : </label>
+                <input type = "text" name = "txt_name" class="id1" id='sub111'>
+            </div>
+            <div>
+                <label for = "txt_name">Subject2 : </label>
+                <input type = "text" name = "txt_name" class="id1" id='sub222'>
+            </div>
+            <br><br>
+            <div>
+                <label for = "txt_name">Name : </label>
+                <input type = "text" name = "txt_name" id='name4'>
+            </div>
+            <div>
+                <label for = "txt_name">Subject1 : </label>
+                <input type = "text" name = "txt_name" class="id1" id='sub1111'>
+            </div>
+            <div>
+                <label for = "txt_name">Subject2 : </label>
+                <input type = "text" name = "txt_name" class="id1" id='sub2222'>
+            </div> -->
+<br><br><br>
+
+            <div>
+                <input type="button" value = "submitValue"name="btn_click" onclick="submitValue()">
+            </div>
+            
+        </fieldset>
+    </form>
+
+    <table border="2" width="50%">
+        <script>
+            
+            document.write("<tr>");
+                    document.write("<th>"+"Name"+"</th>");
+                    document.write("<th>"+"Subject1"+"</th>");
+                    document.write("<th>"+"Subject1"+"</th>");
+            document.write("</tr>");
+            for(var i in stu1)
+            {
+                
+                document.write("<tr>");
+                    document.writeln("<td>"+stu[i][0]+"</td>");
+                    document.writeln("<td>"+stu[i][1]+"</td>");
+                    document.writeln("<td>"+stu[i][2]+"</td>");
+                document.write("</tr>");
+            }
+        </script>
+        </table>
+
+
+
+</body>
+</html>

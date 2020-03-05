@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .id1
+        {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+    <script>
+        function myAdd()
+        {
+            var s1 = parseInt(document.getElementById('sub1').value);
+            var s2 = parseInt(document.getElementById('sub2').value);
+            console.log(s1);
+            if(s2 == 0)
+            {
+                alert('Plz enter non zero value');
+                var s2 = parseInt(document.getElementById('sub2').value);
+            }
+            else if(s1 < 0 || s2 < 0)
+            {
+                alert('Plz enter postive values');
+                var s1 = parseInt(document.getElementById('sub1').value);
+                var s2 = parseInt(document.getElementById('sub2').value);
+            }
+            
+            var c = s1 + s2;
+            
+            // switch(temp)
+            // {
+            //     case 1 : res = a + b;
+            //     break;
+            //     case 2 : res = a - b;
+            //     break;
+            //     case 3 : res = a * b;
+            //     break;
+            //     case 4 : res = a / b;
+            //     break;
+            //     default : alert("PLZZ enter a valid num");
+            //     break;
+            // }
+            var x = document.getElementById('sum').value = c;
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label for = "txt_name">Maths : </label>
+        <input type = "text" name = "txt_name" class="id1" id='sub1'>
+    </div>
+    <div>
+        <label for = "txt_name">English : </label>
+        <input type = "text" name = "txt_name" class="id1" id='sub2'>
+    </div>
+    <div>
+        <input type="button" name="btn_click" value="Add" onclick="myAdd()">
+    </div>
+    <div>
+        <label for = "txt_name">Sum : </label>
+        <input type = "text" name = "txt_name" class="id1" id='sum'>
+    </div>
+</body>
+</html>
